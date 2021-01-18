@@ -1,9 +1,7 @@
-Ideal Proficiencies: Basic mechatronics, biomechanics, programming, signal processing
+Ideal Proficiencies: Basic soldering and electromechanical prototyping, programming (Python and/or C/C++, some Java or other app-making experience), wireless communication
 
-Baseline objective: Use FSR insoles to measure gait symmetry and associated software. Create a file stored locally with metrics. Idea is that a clinician could have someone take the system home and wear it for a few hours a day, then analyze it at the next appt. Build a housing to hold uc, batteries, and sensors that is comfortable and works for different shoe sizes. If the group is more mechanically inclined, maybe work on ways to make the FSR insole more robust/last longer.
+Baseline objective: Implement wireless interface for use with stance detection insole (and fabricate a basic insole setup). Set up a single board computer or MCU (e.g. RPi4, RPi Zero W, Arduino UNO) to receive signal and utilize it in a simple program.
 
-Intermediate objective: Add an IMU to detect additional gait characteristics. Might be possible to just integrate to get step length. Probably lots of options they could try.
+Intermediate objective: Prior objective, plus bilateral insole system using wireless interface for both insoles' signal communication
 
-Advanced objective: Build on the earlier metrics to create a dashboard. Easy option is webserver and HTML. Flashier options would be on a mobile app or something that pushes data real time. Could also look at making the metrics measured in the medium objective more reliable/filtering.
-
-
+Advanced objective: Prior objective(s) plus creation of an app for real time transmission, reading, recording of data from insoles. Attention should be paid to reliability and user experience, both for use by academic research teams and potential clinical deployment for easy data collection by clinicians.
