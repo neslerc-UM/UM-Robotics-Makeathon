@@ -3,7 +3,7 @@
 Image from Businesswire.com
 
 # Wearable Gait Metric System
-Continuous monitoring of a subject's gait will help the clinician to analyze and recommend appropriate suggestions in the next visit. Information such as cadence, detection of toe off and heel strike conditions are vital for the clinician to provide the patient with proper training for gait rehabilitation. This information will play an important role in helping patients with parkinson's disease and steppage gaits. However, it is difficult for a clinician to keep track of a patient's gait for long periods of time. **The objective of this project is to design the an electronic system that detects a human gait and saves that information locally which can be used by a clinician to provide proper gait rehabilitation to the patient.**
+Continuous monitoring of a subject's gait will help the clinician to analyze and recommend appropriate suggestions in the next visit. Information such as cadence, detection of toe off and heel strike conditions are vital for the clinician to provide the patient with proper training for gait rehabilitation. This information will play an important role in helping patients with parkinson's disease and steppage gaits. However, it is difficult for a clinician to keep track of a patient's gait for long periods of time. **The objective of this project is to design an electronic system that detects a human gait and saves that information locally which can be used by a clinician to provide proper gait rehabilitation to the patient.**
 # The challenge
 ## Easy:
 * Use FSR insoles to measure gait symmetry and associated software. 
