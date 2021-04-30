@@ -1,0 +1,27 @@
+The following is a link to the offline processor we used to create a body tracking json file for the test2.mkv video that Chris sent. 
+I have also written a brief tutorial below the link.
+
+https://github.com/microsoft/Azure-Kinect-Samples/tree/master/body-tracking-samples/offline_processor
+
+
+Steps to build the offline processor:
+ 
+1) Download the azure kinect samples repo from github
+
+2) Open the offline processor folder (from azure kinect samples-> body tracking-> offline processor) 
+in visual studio (preferably 2017; if 2019, need the 10.0.17134 windows sdk to build the solution. 
+Find this old sdk at https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
+
+3) Double click on the offline processor solution file (offline_processor.sln) to open it. 
+Alternatively, you could have just opened the offline processor sln in visual studio instead of going through the offline processor folder 
+Build the solution (at the top, build OR right click on offline_processor.sln to build).
+Then compile/run main.cpp. I did this through tools->Command Line-> Powershell. Change directory in powershell to be where the exe file is stored, so for me in 
+offline_processor\build\bin\Debug. Then the command is ./offline_processor.exe, input the path to the mkv video file, and the output json we want to create. 
+So the command for me would be: 
+.\offline_processor.exe  C:\Users\shubha\Downloads\test2\test2.mkv joint_data.json
+
+*NOTE: To run it successfully, the machine needs CUDA (NVIDIA GPU). I didn’t have that on my machine, so I had to add the line (106) in the main.cpp: 
+tracker_config.processing_mode = k4abt_tracker_processing_mode_t::K4ABT_TRACKER_PROCESSING_MODE_CPU;
+..which basically specifies running on CPU instead of GPU. tracker_config is a struct-see line 105..
+
+This will create our output json file with joint data (from the mkv video) in 'Debug' file 
